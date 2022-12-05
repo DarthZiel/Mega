@@ -9,4 +9,4 @@ class UserForm(UserCreationForm):
     password2 = forms.CharField(label='Повтор пароля', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
     class Meta:
         model = CustomUser
-        fields = ('username', 'password1', 'password2')
+        fields = ('email', 'password1', 'password2')

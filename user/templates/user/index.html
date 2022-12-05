@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}
+
+      {% endblock %}</title>
+</head>
+<body>
+  {% block mainmenu %}
+
+{% if request.user.is_authenticated %}
+ {{request.user.email}} | <a href="{% url 'logout' %}">Выйти</a>
+{% else %}
+<a href="{% url 'register' %}">Регистрация</a> | <a href="{% url 'login' %}">Войти</a>
+{% endif %}
+ {% endblock mainmenu %}
+
+ {% block content %}
+      {% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
