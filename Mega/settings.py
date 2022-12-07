@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user.apps.UserConfig',
     'vavilon.apps.VavilonConfig',
+    'vavilonApi.apps.VavilonapiConfig',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
